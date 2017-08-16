@@ -546,7 +546,15 @@ public class MainActivity extends BaseActivity {
         @Override
         public void onReceive(Context context, Intent intent) {
 
-            startPropertyAnim(mSplashImgv);
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+
+                    startPropertyAnim(mSplashImgv);
+
+                }
+            }, (int)(Math.random() * 5) * 1000);
+
 
         }
     };

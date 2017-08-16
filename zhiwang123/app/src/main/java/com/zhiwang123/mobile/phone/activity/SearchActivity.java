@@ -443,6 +443,18 @@ public class SearchActivity extends BaseActivity implements LHSearchHistoryLayou
                                     topic.imgResId = R.drawable.t490;
                                 } else if(c.categoryPkIds.contains(String.valueOf(StaticConfigs.T_14_604))) {
                                     topic.imgResId = R.drawable.t604;
+                                } else if(c.categoryPkIds.contains(String.valueOf(StaticConfigs.T_15_681))) {
+                                    topic.imgResId = R.drawable.t681;
+                                } else if(c.categoryPkIds.contains(String.valueOf(StaticConfigs.T_16_682))) {
+                                    topic.imgResId = R.drawable.t682;
+                                } else if(c.categoryPkIds.contains(String.valueOf(StaticConfigs.T_17_683))) {
+                                    topic.imgResId = R.drawable.t683;
+                                } else if(c.categoryPkIds.contains(String.valueOf(StaticConfigs.T_18_684))) {
+                                    topic.imgResId = R.drawable.t684;
+                                } else if(c.categoryPkIds.contains(String.valueOf(StaticConfigs.T_19_685))) {
+                                    topic.imgResId = R.drawable.t685;
+                                } else if(c.categoryPkIds.contains(String.valueOf(StaticConfigs.T_20_686))) {
+                                    topic.imgResId = R.drawable.t686;
                                 } else {
                                     topic.imgResId = R.drawable.tmp_sit;
                                 }

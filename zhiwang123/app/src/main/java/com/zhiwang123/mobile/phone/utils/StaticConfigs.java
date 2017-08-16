@@ -58,6 +58,12 @@ public class StaticConfigs {
     public static final int T_12_465 = 465;
     public static final int T_13_490 = 490;
     public static final int T_14_604 = 604;
+    public static final int T_15_681 = 681;
+    public static final int T_16_682 = 682;
+    public static final int T_17_683 = 683;
+    public static final int T_18_684 = 684;
+    public static final int T_19_685 = 685;
+    public static final int T_20_686 = 686;
 
     public static final int EXAM_E_STATE_LE = 0;
     public static final int EXAM_E_STATE_IN = 1;

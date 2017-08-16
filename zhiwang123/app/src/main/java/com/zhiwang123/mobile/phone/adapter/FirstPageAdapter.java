@@ -26,6 +26,7 @@ import com.ouchn.flipper.SliderLayout;
 import com.ouchn.flipper.SliderTypes.BaseSliderView;
 import com.ouchn.flipper.SliderTypes.TextSliderView;
 import com.zhiwang123.mobile.R;
+import com.zhiwang123.mobile.phone.activity.CourseListActivity;
 import com.zhiwang123.mobile.phone.activity.TopicWebPageActivity;
 import com.zhiwang123.mobile.phone.bean.Course;
 import com.zhiwang123.mobile.phone.bean.CourseNewest;
@@ -165,6 +166,18 @@ public class FirstPageAdapter extends BaseZwAdapter {
                                     topic.imgResId = R.drawable.t490;
                                 } else if(c.categoryPkIds.contains(String.valueOf(StaticConfigs.T_14_604))) {
                                     topic.imgResId = R.drawable.t604;
+                                } else if(c.categoryPkIds.contains(String.valueOf(StaticConfigs.T_15_681))) {
+                                    topic.imgResId = R.drawable.t681;
+                                } else if(c.categoryPkIds.contains(String.valueOf(StaticConfigs.T_16_682))) {
+                                    topic.imgResId = R.drawable.t682;
+                                } else if(c.categoryPkIds.contains(String.valueOf(StaticConfigs.T_17_683))) {
+                                    topic.imgResId = R.drawable.t683;
+                                } else if(c.categoryPkIds.contains(String.valueOf(StaticConfigs.T_18_684))) {
+                                    topic.imgResId = R.drawable.t684;
+                                } else if(c.categoryPkIds.contains(String.valueOf(StaticConfigs.T_19_685))) {
+                                    topic.imgResId = R.drawable.t685;
+                                } else if(c.categoryPkIds.contains(String.valueOf(StaticConfigs.T_20_686))) {
+                                    topic.imgResId = R.drawable.t686;
                                 } else {
                                     topic.imgResId = R.drawable.tmp_sit;
                                 }
@@ -792,10 +805,16 @@ public class FirstPageAdapter extends BaseZwAdapter {
 
                 case R.id.free_con:
 
-                    intent.putExtra(TopicWebPageActivity.KEY_URL, "http://www.zhiwang123.com/ThrCourse/Index");
-                    intent.putExtra(TopicWebPageActivity.KEY_NAME, "免费课程");
+//                    intent.putExtra(TopicWebPageActivity.KEY_URL, "http://www.zhiwang123.com/ThrCourse/Index");
+//                    intent.putExtra(TopicWebPageActivity.KEY_NAME, "免费课程");
 
-                    break;
+                    Intent intent2 = new Intent(mContext, CourseListActivity.class);
+                    intent2.putExtra(CourseListActivity.EXTRA_SWITCH_FRAGMENT, CourseListActivity.FRAGMENT_COURSE_LIST);
+                    intent2.putExtra(CourseListActivity.EXTRA_PKIDS, "490");
+                    intent2.putExtra(CourseListActivity.EXTRA_NAME, "经典免费课程");
+                    mContext.startActivity(intent2);
+
+                    return;
                 case R.id.bargin_con:
 
                     intent.putExtra(TopicWebPageActivity.KEY_URL, "http://www.zhiwang123.com/ThrCourse/Index");
