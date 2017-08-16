@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/zw_white"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="top|center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <LinearLayout
+                android:id="@+id/order_cell_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:gravity="left|center_vertical">
+
+                <TextView
+                    android:id="@+id/order_cell_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/zw_gray_order_cell_text"
+                    android:text="@string/order_numb"/>
+
+                <TextView
+                    android:id="@+id/order_cell_create"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/zw_gray_order_cell_text"
+                    android:text="@string/order_create"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_toRightOf="@id/order_cell_t"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/deep_to_n"/>
+
+            <TextView
+                android:id="@+id/order_cell_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/zw_orange_price"
+                android:text="@string/order_clo"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <ListView
+                android:id="@+id/order_cell_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/zw_white"
+                android:scrollbars="none"
+                android:dividerHeight="2dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/order_item_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/zw_gray_order_cell_text"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/order_cell_total_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/order_item_money"
+                android:textColor="@color/zw_gray_order_cell_text"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:text="@string/order_item_inner_num"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/zw_gray_course_cell_sep"/>
+
+        <RelativeLayout
+            android:id="@+id/order_btn_con"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/order_cancel_btn"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textColor="@color/zw_gray_order_cell_text"
+                android:background="@drawable/order_cancel_bg_shape"
+                android:text="@string/order_item_cancel"/>
+
+            <TextView
+                android:id="@+id/order_paynow_btn"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/order_cancel_btn"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/zw_orange_price"
+                android:background="@drawable/order_paynow_bg_shape"
+                android:text="@string/order_item_paynow"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/zw_gray_course_cell_sep"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

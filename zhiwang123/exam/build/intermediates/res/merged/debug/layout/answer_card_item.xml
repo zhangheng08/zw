@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:questionindex="http://schemas.android.com/apk/res-auto"
+    android:layout_width="80dp"
+    android:layout_height="80dp" 
+    android:background="@drawable/answer_card_item_bg_selector">
+    
+    <TextView 
+        android:id="@+id/answer_card_item_index"
+        android:layout_width="@dimen/question_option_index_size"
+        android:layout_height="@dimen/question_option_index_size"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_margin="2dp"
+        android:textSize="@dimen/question_option_text_size"
+        android:background="@drawable/question_option_bg_shape"
+        android:textColor="@color/main_blue" />
+
+</RelativeLayout>

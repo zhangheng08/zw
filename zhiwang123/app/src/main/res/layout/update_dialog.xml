@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:gravity="top|center_horizontal"
+    android:background="@color/zw_trans_h">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.3"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:background="@drawable/organ_dialog_bg_shape">
+
+        <TextView
+            android:id="@+id/udpate_close_btn"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/close_gray"/>
+
+        <TextView
+            android:id="@+id/udpate_info_btn"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical|right"
+            android:textSize="18sp"
+            android:text="@string/app_tip"
+            android:textColor="@color/zw_gray_course_detail_page_txt"
+            android:drawableLeft="@drawable/update_alert"/>
+
+        <TextView
+            android:id="@+id/update_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/udpate_info_btn"
+            android:maxLines="2"
+            android:textSize="16sp"
+            android:textColor="@color/zw_gray_me_page_txt"
+            android:text="@string/update_alert_dialog_str"/>
+
+        <LinearLayout
+            android:id="@+id/update_bottom_btn_line"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/update_confirm_btn"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:background="@drawable/login_btn_bg_shape"
+                android:text="@string/update_confirm"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/main_white"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/update_cancel_btn"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:background="@drawable/hint_cancel_shape"
+                android:text="@string/update_cancel"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/main_white"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/update_bottom_btn_line"
+            android:layout_below="@id/update_title">
+
+            <ProgressBar
+                android:id="@+id/update_progress"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_marginTop="50dp"
+                android:max="100"
+                android:progress="0"/>
+
+            <TextView
+                android:id="@+id/update_max_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/update_progress"
+                android:textColor="@color/zw_gray_me_page_txt"
+                android:textSize="12sp"
+                android:layout_alignRight="@id/update_progress"
+                android:text=" / 0M"/>
+
+            <TextView
+                android:id="@+id/update_curr_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/update_progress"
+                android:textColor="@color/zw_gray_me_page_txt"
+                android:layout_toLeftOf="@id/update_max_length"
+                android:textSize="12sp"
+                android:text="0"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.9"/>
+
+</LinearLayout>

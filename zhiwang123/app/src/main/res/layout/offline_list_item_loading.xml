@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/zw_gray_main_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inner_cell_height"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:baselineAligned="false"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_v_margin"
+        android:layout_marginBottom="@dimen/activity_v_margin">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/colorPrimary_hf_tran"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorPrimary"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/loading_c"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/main_cell_padding"
+            android:layout_weight="7">
+
+            <TextView
+                android:id="@+id/offline_loading_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/main_cell_text_style"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="@string/offline_loading"/>
+
+            <TextView
+                android:id="@+id/offline_loading_sub_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:textSize="@dimen/main_cell_txt_sub_size"
+                android:textColor="@color/zw_orange_price"
+                android:maxLines="1"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="15dp"
+                android:text="@string/offline_loading_num"/>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.2px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@color/zw_gray_login_sep"/>
+
+</RelativeLayout>

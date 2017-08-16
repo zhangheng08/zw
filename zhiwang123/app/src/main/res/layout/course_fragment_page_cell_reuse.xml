@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/zw_gray_course_cell_sep">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:orientation="vertical"
+        android:background="@drawable/cell_bg_shape"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:id="@+id/cell_to_category_list_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <View
+                android:id="@+id/cell_actor"
+                android:layout_width="3.5dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/cell_course_root"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/zw_gray_list_txt"
+                android:textSize="16sp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/cell_actor"
+                android:text="@string/cell_tmp_name"/>
+
+            <TextView
+                android:id="@+id/cell_to_more"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/zw_gray_main_cell_sub_txt"
+                android:textSize="13sp"
+                android:clickable="true"
+                android:text="@string/cell_to_more"/>
+
+        </RelativeLayout>
+
+        <!--<HorizontalScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="220dp">-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/cell_recommand_container"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:gravity="center_vertical|left">-->
+
+            <!--</LinearLayout>-->
+
+        <!--</HorizontalScrollView>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cell_recommand_container"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginBottom="1.5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

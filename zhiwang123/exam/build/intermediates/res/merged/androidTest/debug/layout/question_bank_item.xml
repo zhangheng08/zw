@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_depot_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="start|center_vertical"
+    tools:context="com.ouchn.exam.MainActivity" >
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/main_depot_item_height"
+        android:orientation="vertical"
+        android:gravity="top|start"
+        android:layout_weight="8">
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/main_depot_item_left_img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/depot_item_check_no"
+                android:scaleType="fitXY"/>
+            
+            <TextView 
+                android:id="@+id/main_depot_item_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/main_deep_blue"
+                android:textSize="@dimen/main_depot_item_txt_size"
+                android:text="autoCAD工程制图考试题库"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_weight="0">
+            
+            <SeekBar 
+                android:id="@+id/depot_answered_progress"
+                android:layout_width="150dp"
+                android:layout_height="5dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="false"
+                android:padding="0dp"
+                android:thumb="@null"/>
+            
+            <TextView 
+                android:id="@+id/depot_answered_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="@color/main_gray"
+                android:layout_marginLeft="10dp"
+                android:text="3/1923"/>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/depot_to_answer"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:gravity="right|center_vertical"
+        android:layout_weight="2">
+		
+        <ImageView 
+            android:id="@+id/main_depot_item_right_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:src="@drawable/depot_check_no"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\debug\\layout\\poup_text_size.xml",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\src\\main\\res\\layout\\poup_text_size.xml"
+    },
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\debug\\layout\\question_option_sort_layout.xml",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\src\\main\\res\\layout\\question_option_sort_layout.xml"
+    },
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main_exam.xml",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\src\\main\\res\\layout\\activity_main_exam.xml"
+    },
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\debug\\layout\\question_bank_item.xml",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\src\\main\\res\\layout\\question_bank_item.xml"
+    },
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\debug\\layout\\answer_card_item.xml",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\src\\main\\res\\layout\\answer_card_item.xml"
+    },
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\debug\\layout\\answer_card_layout.xml",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\src\\main\\res\\layout\\answer_card_layout.xml"
+    },
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\debug\\layout\\timer_layout.xml",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\src\\main\\res\\layout\\timer_layout.xml"
+    },
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\debug\\layout\\select_option_items.xml",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\src\\main\\res\\layout\\select_option_items.xml"
+    },
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\debug\\layout\\match_option_item.xml",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\src\\main\\res\\layout\\match_option_item.xml"
+    },
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\debug\\layout\\answer_note_layout.xml",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\src\\main\\res\\layout\\answer_note_layout.xml"
+    },
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\debug\\layout\\question_item.xml",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\src\\main\\res\\layout\\question_item.xml"
+    },
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\debug\\layout\\question_option_match_layout.xml",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\src\\main\\res\\layout\\question_option_match_layout.xml"
+    },
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\debug\\layout\\sort_option_item.xml",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\src\\main\\res\\layout\\sort_option_item.xml"
+    },
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\debug\\layout\\answer_question_layout.xml",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\src\\main\\res\\layout\\answer_question_layout.xml"
+    },
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\debug\\layout\\custom_actionbar.xml",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\src\\main\\res\\layout\\custom_actionbar.xml"
+    },
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\debug\\layout\\index_option_item.xml",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\src\\main\\res\\layout\\index_option_item.xml"
+    },
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\debug\\layout\\depot_item.xml",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\src\\main\\res\\layout\\depot_item.xml"
+    },
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\debug\\layout\\title_bar.xml",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\src\\main\\res\\layout\\title_bar.xml"
+    },
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\debug\\layout\\question_dialog_layout.xml",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\src\\main\\res\\layout\\question_dialog_layout.xml"
+    }
+]

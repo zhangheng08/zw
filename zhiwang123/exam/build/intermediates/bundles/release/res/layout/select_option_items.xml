@@ -1,0 +1,344 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:questionindex="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/question_option_root_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@color/question_bg_color"
+        android:gravity="top|left"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <com.ouchn.lib.widget.QuestionOptionIndex
+            android:id="@+id/question_option_index_1"
+            android:layout_width="@dimen/question_option_index_size"
+            android:layout_height="@dimen/question_option_index_size"
+            android:gravity="center"
+            android:textSize="@dimen/question_option_text_size"
+            questionindex:option_index="0"
+            questionindex:option_index_bg="@drawable/question_option_bg_shape"
+            questionindex:option_index_selelcted_bg="@drawable/question_option_selected_bg_shape"
+            questionindex:option_index_string="1"
+            questionindex:option_index_text_color="@color/main_blue"
+            questionindex:option_index_text_color_selected="@color/main_white" />
+
+        <TextView
+            android:id="@+id/question_option_content_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="start"
+            android:text="null"
+            android:textColor="@color/question_text_color"
+            android:textSize="@dimen/question_option_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/question_option_root_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@color/question_bg_color"
+        android:gravity="top|left"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <com.ouchn.lib.widget.QuestionOptionIndex
+            android:id="@+id/question_option_index_2"
+            android:layout_width="@dimen/question_option_index_size"
+            android:layout_height="@dimen/question_option_index_size"
+            android:gravity="center"
+            android:textSize="@dimen/question_option_text_size"
+            questionindex:option_index="1"
+            questionindex:option_index_bg="@drawable/question_option_bg_shape"
+            questionindex:option_index_selelcted_bg="@drawable/question_option_selected_bg_shape"
+            questionindex:option_index_string="2"
+            questionindex:option_index_text_color="@color/main_blue"
+            questionindex:option_index_text_color_selected="@color/main_white" />
+
+        <TextView
+            android:id="@+id/question_option_content_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="start"
+            android:text="null"
+            android:textColor="@color/question_text_color"
+            android:textSize="@dimen/question_option_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/question_option_root_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@color/question_bg_color"
+        android:gravity="top|left"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <com.ouchn.lib.widget.QuestionOptionIndex
+            android:id="@+id/question_option_index_3"
+            android:layout_width="@dimen/question_option_index_size"
+            android:layout_height="@dimen/question_option_index_size"
+            android:gravity="center"
+            android:textSize="@dimen/question_option_text_size"
+            questionindex:option_index="2"
+            questionindex:option_index_bg="@drawable/question_option_bg_shape"
+            questionindex:option_index_selelcted_bg="@drawable/question_option_selected_bg_shape"
+            questionindex:option_index_string="3"
+            questionindex:option_index_text_color="@color/main_blue"
+            questionindex:option_index_text_color_selected="@color/main_white" />
+
+        <TextView
+            android:id="@+id/question_option_content_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="start"
+            android:text="null"
+            android:textColor="@color/question_text_color"
+            android:textSize="@dimen/question_option_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/question_option_root_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@color/question_bg_color"
+        android:gravity="top|left"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <com.ouchn.lib.widget.QuestionOptionIndex
+            android:id="@+id/question_option_index_4"
+            android:layout_width="@dimen/question_option_index_size"
+            android:layout_height="@dimen/question_option_index_size"
+            android:gravity="center"
+            android:textSize="@dimen/question_option_text_size"
+            questionindex:option_index="3"
+            questionindex:option_index_bg="@drawable/question_option_bg_shape"
+            questionindex:option_index_selelcted_bg="@drawable/question_option_selected_bg_shape"
+            questionindex:option_index_string="4"
+            questionindex:option_index_text_color="@color/main_blue"
+            questionindex:option_index_text_color_selected="@color/main_white" />
+
+        <TextView
+            android:id="@+id/question_option_content_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="start"
+            android:text="null"
+            android:textColor="@color/question_text_color"
+            android:textSize="@dimen/question_option_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/question_option_root_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@color/question_bg_color"
+        android:gravity="top|left"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <com.ouchn.lib.widget.QuestionOptionIndex
+            android:id="@+id/question_option_index_5"
+            android:layout_width="@dimen/question_option_index_size"
+            android:layout_height="@dimen/question_option_index_size"
+            android:gravity="center"
+            android:textSize="@dimen/question_option_text_size"
+            questionindex:option_index="4"
+            questionindex:option_index_bg="@drawable/question_option_bg_shape"
+            questionindex:option_index_selelcted_bg="@drawable/question_option_selected_bg_shape"
+            questionindex:option_index_string="5"
+            questionindex:option_index_text_color="@color/main_blue"
+            questionindex:option_index_text_color_selected="@color/main_white" />
+
+        <TextView
+            android:id="@+id/question_option_content_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="start"
+            android:text="null"
+            android:textColor="@color/question_text_color"
+            android:textSize="@dimen/question_option_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/question_option_root_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@color/question_bg_color"
+        android:gravity="top|left"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <com.ouchn.lib.widget.QuestionOptionIndex
+            android:id="@+id/question_option_index_6"
+            android:layout_width="@dimen/question_option_index_size"
+            android:layout_height="@dimen/question_option_index_size"
+            android:gravity="center"
+            android:textSize="@dimen/question_option_text_size"
+            questionindex:option_index="5"
+            questionindex:option_index_bg="@drawable/question_option_bg_shape"
+            questionindex:option_index_selelcted_bg="@drawable/question_option_selected_bg_shape"
+            questionindex:option_index_string="6"
+            questionindex:option_index_text_color="@color/main_blue"
+            questionindex:option_index_text_color_selected="@color/main_white" />
+
+        <TextView
+            android:id="@+id/question_option_content_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="start"
+            android:text="null"
+            android:textColor="@color/question_text_color"
+            android:textSize="@dimen/question_option_text_size" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/question_option_root_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@color/question_bg_color"
+        android:gravity="top|left"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <com.ouchn.lib.widget.QuestionOptionIndex
+            android:id="@+id/question_option_index_7"
+            android:layout_width="@dimen/question_option_index_size"
+            android:layout_height="@dimen/question_option_index_size"
+            android:gravity="center"
+            android:textSize="@dimen/question_option_text_size"
+            questionindex:option_index="6"
+            questionindex:option_index_bg="@drawable/question_option_bg_shape"
+            questionindex:option_index_selelcted_bg="@drawable/question_option_selected_bg_shape"
+            questionindex:option_index_string="7"
+            questionindex:option_index_text_color="@color/main_blue"
+            questionindex:option_index_text_color_selected="@color/main_white" />
+
+        <TextView
+            android:id="@+id/question_option_content_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="start"
+            android:text="null"
+            android:textColor="@color/question_text_color"
+            android:textSize="@dimen/question_option_text_size" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/question_option_root_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@color/question_bg_color"
+        android:gravity="top|left"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <com.ouchn.lib.widget.QuestionOptionIndex
+            android:id="@+id/question_option_index_8"
+            android:layout_width="@dimen/question_option_index_size"
+            android:layout_height="@dimen/question_option_index_size"
+            android:gravity="center"
+            android:textSize="@dimen/question_option_text_size"
+            questionindex:option_index="7"
+            questionindex:option_index_bg="@drawable/question_option_bg_shape"
+            questionindex:option_index_selelcted_bg="@drawable/question_option_selected_bg_shape"
+            questionindex:option_index_string="8"
+            questionindex:option_index_text_color="@color/main_blue"
+            questionindex:option_index_text_color_selected="@color/main_white" />
+
+        <TextView
+            android:id="@+id/question_option_content_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="start"
+            android:text="null"
+            android:textColor="@color/question_text_color"
+            android:textSize="@dimen/question_option_text_size" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/question_option_root_9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@color/question_bg_color"
+        android:gravity="top|left"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <com.ouchn.lib.widget.QuestionOptionIndex
+            android:id="@+id/question_option_index_9"
+            android:layout_width="@dimen/question_option_index_size"
+            android:layout_height="@dimen/question_option_index_size"
+            android:gravity="center"
+            android:textSize="@dimen/question_option_text_size"
+            questionindex:option_index="8"
+            questionindex:option_index_bg="@drawable/question_option_bg_shape"
+            questionindex:option_index_selelcted_bg="@drawable/question_option_selected_bg_shape"
+            questionindex:option_index_string="9"
+            questionindex:option_index_text_color="@color/main_blue"
+            questionindex:option_index_text_color_selected="@color/main_white" />
+
+        <TextView
+            android:id="@+id/question_option_content_9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="start"
+            android:text="null"
+            android:textColor="@color/question_text_color"
+            android:textSize="@dimen/question_option_text_size" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/question_option_root_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@color/question_bg_color"
+        android:gravity="top|left"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <com.ouchn.lib.widget.QuestionOptionIndex
+            android:id="@+id/question_option_index_10"
+            android:layout_width="@dimen/question_option_index_size"
+            android:layout_height="@dimen/question_option_index_size"
+            android:gravity="center"
+            android:textSize="@dimen/question_option_text_size"
+            questionindex:option_index="9"
+            questionindex:option_index_bg="@drawable/question_option_bg_shape"
+            questionindex:option_index_selelcted_bg="@drawable/question_option_selected_bg_shape"
+            questionindex:option_index_string="10"
+            questionindex:option_index_text_color="@color/main_blue"
+            questionindex:option_index_text_color_selected="@color/main_white" />
+
+        <TextView
+            android:id="@+id/question_option_content_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="start"
+            android:text="null"
+            android:textColor="@color/question_text_color"
+            android:textSize="@dimen/question_option_text_size" />
+    </LinearLayout>
+
+</merge>

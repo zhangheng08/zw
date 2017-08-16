@@ -1,0 +1,257 @@
+<resources>
+
+    <string name="app_name">智网</string>
+    <string name="title_activity_base">BaseActivity</string>
+
+    <string name="main_page_sy">首页</string>
+    <string name="main_page_kc">课程</string>
+    <string name="main_page_wd">我的</string>
+
+    <string name="page_course_center">课程中心</string>
+
+    <string name="exit_notice">再按一次退出程序</string>
+    <string name="login_hint_nm">手机号/邮箱</string>
+    <string name="login_hint_pw">密码</string>
+    <string name="register_hint_pn">请输入手机号</string>
+    <string name="register_hint_pv">请输入验证码</string>
+    <string name="register_hint_pw">设置密码</string>
+    <string name="register_hint_repw">重复密码</string>
+    <string name="register_sms_sending">短信正在发送至您手机，请稍后</string>
+    <string name="register_result_success">注册成功</string>
+    <string name="login_e_select">选择机构</string>
+    <string name="login_btn">立即登录</string>
+    <string name="register_btn">立即注册</string>
+    <string name="bind_register_btn_txt">绑定注册</string>
+    <string name="login_forget">忘记密码？</string>
+    <string name="login_title_login">登录</string>
+    <string name="login_title_register">注册</string>
+    <string name="login_hint_txt">企业用户请选择机构</string>
+    <string name="login_wx">微信登录</string>
+    <string name="login_third_confirm">确认登录</string>
+
+    <string name="name_empty_error">用户名不可为空</string>
+    <string name="password_empty_error">密码不可为空</string>
+    <string name="login_error">用户名或密码错误</string>
+    <string name="register_get_code">获取验证码</string>
+    <string name="register_get_code_waiting">重新发送(%d)</string>
+    <string name="register_page_title">填写手机号</string>
+    <string name="forget_pass_word">忘记密码</string>
+
+    <string name="phone_empty_error">手机号不可为空</string>
+    <string name="code_empty_error">验证码不可为空</string>
+    <string name="repassword_empty_error">请再次输入密码</string>
+    <string name="phone_num_format_error">请输入正确的手机号</string>
+    <string name="password_not_thesame_error">两次输入的密码不一致</string>
+
+    <string name="me_course_center">课程中心</string>
+    <string name="me_exam_center">考试中心</string>
+    <string name="me_favorite">收藏</string>
+    <string name="me_cache_course">缓存课程</string>
+    <string name="me_cart">购物车</string>
+    <string name="me_order_list">我的订单</string>
+
+    <string name="me_online_ask">在线咨询</string>
+    <string name="me_hot_line">服务热线</string>
+
+    <string name="me_saysometing">评价我们</string>
+    <string name="me_feedback">意见反馈</string>
+    <string name="me_settings">设置</string>
+    <string name="cell_add_to">加入购课篮</string>
+
+    <string name="cell_course_time">学时：%d分钟</string>
+    <string name="cell_course_count">%d节课</string>
+    <string name="course_price">￥ %d</string>
+    <string name="course_hourse">共%d分钟</string>
+    <string name="course_teacher">讲师：%s</string>
+
+    <string name="cell_free_course">免费课程</string>
+    <string name="cell_free_course_sub">优质课程任你选</string>
+    <string name="cell_bargain">超值套餐</string>
+    <string name="cell_bargain_sub">白菜价格买到玫瑰一样的课程</string>
+    <string name="cell_teacher_ranking">优秀讲师榜</string>
+    <string name="cell_teacher_ranking_sub">汇聚一线实战讲师</string>
+    <string name="cell_face_course">面授课程</string>
+    <string name="cell_face_course_sub">优秀讲师现场教学</string>
+    <string name="cell_news">新闻动态</string>
+    <string name="cell_news_sub">最新新闻动态</string>
+
+    <string name="cell_tmp_name">智网课程分类</string>
+    <string name="cell_newest_title">最新课程</string>
+    <string name="cell_name_zl">质量网院</string>
+    <string name="cell_name_jnhb">节能环保网院</string>
+    <string name="cell_name_aq">安全网院</string>
+    <string name="cell_name_jyjc">检验检测网院</string>
+
+    <string name="cell_to_more">更多>></string>
+    <string name="c_intr_chapter">章节</string>
+    <string name="c_intr_ask_more">咨询</string>
+    <string name="c_intr_cart">购课篮</string>
+    <string name="c_intr_buy_soon">立即购买</string>
+    <string name="c_intr_to_expan_desc">展开</string>
+    <string name="c_intr_to_hiden_desc">收起</string>
+
+    <string name="video_note">笔记</string>
+    <string name="video_chapter">章节</string>
+    <string name="video_ask">咨询</string>
+    <string name="video_note_save">提交保存笔记</string>
+    <string name="video_no_video">没有可供播放的视频</string>
+
+    <string name="center_to_study">学习</string>
+    <string name="center_to_exam">考试</string>
+    <string name="center_to_test">测试</string>
+    <string name="center_to_when_buy">%s 购买</string>
+    <string name="center_no_more">没有更多了</string>
+    <string name="center_study_hint">本节课程48小时内可重复学习，从开始计时起48小时后将不可观看，点击确认开始学习</string>
+
+    <string name="offline_courses">缓存课程</string>
+    <string name="offline_loading_num">%d 个任务</string>
+    <string name="offline_loading">正在缓存</string>
+    <string name="offline_item_loading">已下载 %d ％...</string>
+    <string name="offline_item_pause">已暂停</string>
+
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">最后更新：</string>
+    <string name="xlistview_header_last_time_just_now">刚刚</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_footer_loading">加载中...</string>
+
+    <string name="me_to_login_tx">登录/注册</string>
+    <string name="me_to_edit_tx">编辑</string>
+    <string name="me_hot_line_number">400-0804-123</string>
+    <string name="organ_input_hint">请输入企业名称</string>
+    <string name="login_error_1">用户名或密码错误</string>
+    <string name="me_to_sign_out">退出登录</string>
+
+    <string name="cart_txt">购物车</string>
+    <string name="cart_to_edt">编辑</string>
+    <string name="cart_to_cancel_edt">取消</string>
+    <string name="select_all">全选</string>
+    <string name="cart_total_rmb">合计：</string>
+    <string name="cart_count_num">结算(%d)</string>
+    <string name="cart_delete_num">删除(%d)</string>
+
+    <string name="order_all">全部</string>
+    <string name="order_no">未付款</string>
+    <string name="order_yes">已支付</string>
+    <string name="order_clo">已关闭</string>
+    <string name="order_mine">我的订单</string>
+    <string name="order_numb">下单编号：%s</string>
+    <string name="order_create">下单时间：%s</string>
+    <string name="order_item_inner_num">共 %d 门课程 合计：￥</string>
+    <string name="order_item_cancel">取消订单</string>
+    <string name="order_item_paynow">立即支付</string>
+
+    <string name="search_cancel">取消</string>
+    <string name="search_yes">确定</string>
+    <string name="search_go">搜索</string>
+    <string name="search_hot">热门搜索</string>
+    <string name="search_history">历史搜索</string>
+    <string name="search_clear">清空历史搜索</string>
+    <string name="search_type_te">讲师</string>
+    <string name="search_type_ti">课程</string>
+    <string name="search_type_teacher">讲师</string>
+    <string name="search_type_title">课程</string>
+    <string name="search_type">选择搜索类型：</string>
+
+    <string name="exam_timer">计时：00:00:00</string>
+    <string name="exam_hand">交卷</string>
+    <string name="exam_check">查看答案</string>
+    <string name="exam_right">正确</string>
+    <string name="exam_wrong">错误</string>
+    <string name="exam_exam_center">考试中心</string>
+    <string name="exam_e_list_cm">时长：%d 分钟</string>
+    <string name="exam_e_list_ti">考试次数：%d</string>
+    <string name="exam_e_list_state_le">未开始</string>
+    <string name="exam_e_list_state_in">进行中</string>
+    <string name="exam_e_list_state_ri">已结束</string>
+    <string name="exam_e_list_goon">继续考试</string>
+    <string name="exam_e_list_start">开始考试</string>
+    <string name="exam_guide_to_test">确认进入考试</string>
+
+    <string name="exam_guide_duration">考试时长\t\t\t\t%d分钟</string>
+    <string name="exam_guide_total_score">试卷总分\t\t\t\t%d分</string>
+    <string name="exam_guide_total_count">试题总数\t\t\t\t%d道题</string>
+    <string name="exam_guide_pass">通过分数\t\t\t\t%d分</string>
+    <string name="exam_guide_desc_t">考试简介：</string>
+
+    <string name="exam_res_num">第 %d 题</string>
+    <string name="exam_res_state_ok">已完成</string>
+    <string name="exam_res_state_no">未完成</string>
+
+
+    <string name="tachp_study_p">%d 学习</string>
+    <string name="tachp_sub_course_number">课程数量：%d</string>
+    <string name="tachp_sub_course_score">学分：%d</string>
+    <string name="tachp_sub_course_minitue">时长（分钟）：%d</string>
+    <string name="tachp_sub_course_prog">进度：%d％</string>
+    <string name="tachp_sub_course_to_learn">进入学习</string>
+    <string name="tachp_zhi">至</string>
+
+    <string name="note_hint">请填写笔记</string>
+    <string name="chapter_status_2">已过期</string>
+    <string name="chapter_status_0">未激活</string>
+    <string name="chapter_status_1">学习中</string>
+    <string name="chapter_loading">已开始下载</string>
+
+    <string name="order_confirm_to_pay">确认支付\t￥%d</string>
+    <string name="order_pay_user_str">余额支付</string>
+    <string name="order_pay_wch_str">微信支付</string>
+    <string name="order_pay_ali_str">支付宝支付</string>
+    <string name="order_pay_user_rmb">￥%d</string>
+    <string name="order_title">订单确认</string>
+    <string name="order_pay_al_sub">推荐有支付宝账号的用户使用</string>
+    <string name="order_pay_wx_sub">推荐安装微信5.0及以上的用户使用</string>
+    <string name="order_pay_type_no_sel">请选择支付方式</string>
+
+    <string name="share_info_str">分享</string>
+    <string name="share_wxcs_str">微信好友</string>
+    <string name="share_wxtl_str">朋友圈</string>
+    <string name="share_qq_str">QQ</string>
+    <string name="share_sina_str">微博</string>
+
+    <string name="fav_add_sucs">已加入收藏</string>
+    <string name="fav_del_sucs">已取消收藏</string>
+    <string name="fav_page_tit">收藏</string>
+
+    <string name="sms_info">注册智网账户</string>
+
+    <string name="bind_login_tt">登录绑定</string>
+    <string name="bind_regist_tt">注册绑定</string>
+
+    <!--cc video-->
+    <string name="action_settings">Settings</string>
+    <string name="download">离线下载</string>
+    <string name="play">播放</string>
+    <string name="upload_video_info">视频信息</string>
+    <string name="download_list">离线列表</string>
+    <string name="screensize">画面尺寸</string>
+    <string name="definition">清晰度</string>
+    <string name="subtitle">字幕</string>
+    <string name="speed">倍速</string>
+    <string name="account_info">账户信息</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="close_ad">关闭广告</string>
+    <string name="ad_info">了解详情</string>
+
+    <!-- WXPayEntryActivity -->
+    <string name="app_tip">提示</string>
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+    <string name="update_alert_dialog_str">智网APP有可用的新版本(v%s)，是否进行升级？</string>
+    <string name="update_confirm">确认升级</string>
+    <string name="update_cancel">返回</string>
+    <string name="update_load_background">开始后台下载</string>
+
+
+    <!-- IDS -->
+
+    <item type="id" name="fav_tag_add" />
+    <item type="id" name="fav_tag_cid" />
+    <item type="id" name="category_name" />
+    <item type="id" name="category_id" />
+
+</resources>

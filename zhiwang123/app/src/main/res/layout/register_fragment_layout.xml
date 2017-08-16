@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/zw_gray_login_bg">
+
+        <LinearLayout
+            android:id="@+id/register_input"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:paddingLeft="@dimen/login_page_margin"
+            android:orientation="vertical"
+            android:gravity="center_vertical|left"
+            android:background="@drawable/login_input_bg_shape"
+            android:weightSum="2.03"
+            android:layout_marginTop="25dp"
+            android:baselineAligned="false">
+
+            <EditText
+                android:id="@+id/register_phone_input"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColorHint="@color/zw_gray_login_txt"
+                android:textSize="@dimen/login_txt_size"
+                android:hint="@string/register_hint_pn"
+                android:background="@null"
+                android:inputType="phone"
+                android:textCursorDrawable="@drawable/eidttext_cursor_color"
+                android:maxLines="1"
+                android:paddingRight="8dp"
+                android:textColor="@color/zw_gray_list_txt"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.03"
+                android:background="@color/zw_gray_login_bg"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="10.05">
+
+                <EditText
+                    android:id="@+id/register_code_input"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6.5"
+                    android:textColorHint="@color/zw_gray_login_txt"
+                    android:textSize="@dimen/login_txt_size"
+                    android:hint="@string/register_hint_pv"
+                    android:inputType="number"
+                    android:background="@null"
+                    android:textCursorDrawable="@drawable/eidttext_cursor_color"
+                    android:maxLines="1"
+                    android:paddingRight="8dp"
+                    android:textColor="@color/zw_gray_list_txt"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:background="@color/zw_gray_login_bg"/>
+
+                <TextView
+                    android:id="@+id/register_code_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.5"
+                    android:textSize="14sp"
+                    android:textColor="@color/zw_gray_list_txt"
+                    android:gravity="center"
+                    android:text="@string/register_get_code"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/register_input2"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:paddingLeft="@dimen/login_page_margin"
+            android:orientation="vertical"
+            android:gravity="center_vertical|left"
+            android:background="@drawable/login_input_bg_shape"
+            android:weightSum="2.03"
+            android:layout_below="@id/register_input"
+            android:layout_marginTop="25dp"
+            android:baselineAligned="false">
+
+            <EditText
+                android:id="@+id/register_pass_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColorHint="@color/zw_gray_login_txt"
+                android:textSize="@dimen/login_txt_size"
+                android:hint="@string/register_hint_pw"
+                android:inputType="textPassword"
+                android:background="@null"
+                android:textCursorDrawable="@drawable/eidttext_cursor_color"
+                android:maxLines="1"
+                android:paddingRight="8dp"
+                android:textColor="@color/zw_gray_list_txt"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.03"
+                android:background="@color/zw_gray_login_bg"/>
+
+            <EditText
+                android:id="@+id/register_pass_reinput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColorHint="@color/zw_gray_login_txt"
+                android:textSize="@dimen/login_txt_size"
+                android:hint="@string/register_hint_repw"
+                android:inputType="textPassword"
+                android:background="@null"
+                android:textCursorDrawable="@drawable/eidttext_cursor_color"
+                android:maxLines="1"
+                android:paddingRight="8dp"
+                android:textColor="@color/zw_gray_list_txt"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="@dimen/login_page_margin"
+            android:layout_marginRight="@dimen/login_page_margin"
+            android:layout_below="@id/register_input2"
+            android:background="@drawable/login_btn_bg_shape"
+            android:textColor="@color/zw_white"
+            android:textSize="@dimen/login_btn_txt_size"
+            android:gravity="center"
+            android:text="@string/register_btn"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+

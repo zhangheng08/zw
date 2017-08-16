@@ -1,0 +1,22 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:id="@+id/timer_back_img"
+        android:layout_width="@dimen/question_page_title_item_wh"
+        android:layout_height="@dimen/question_page_title_item_wh"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/timer_img" />
+
+    <TextView
+        android:id="@+id/timer_front_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/main_blue"
+        android:text="00:00"
+        android:textColor="@color/main_white"
+        android:textSize="16sp" />
+
+</merge>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zw_gray_login_bg"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/bind_lg_input"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:paddingLeft="@dimen/login_page_margin"
+        android:orientation="vertical"
+        android:gravity="center_vertical|left"
+        android:background="@drawable/login_input_bg_shape"
+        android:weightSum="2.03"
+        android:layout_marginTop="25dp"
+        android:baselineAligned="false">
+
+        <EditText
+            android:id="@+id/bind_lg_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@color/zw_gray_login_txt"
+            android:textSize="@dimen/login_txt_size"
+            android:hint="@string/login_hint_nm"
+            android:background="@null"
+            android:textCursorDrawable="@drawable/eidttext_cursor_color"
+            android:maxLines="1"
+            android:paddingRight="8dp"
+            android:textColor="@color/zw_gray_list_txt"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.03"
+            android:background="@color/zw_gray_login_bg"/>
+
+        <EditText
+            android:id="@+id/bind_lg_pass_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@color/zw_gray_login_txt"
+            android:textSize="@dimen/login_txt_size"
+            android:hint="@string/login_hint_pw"
+            android:inputType="textPassword"
+            android:background="@null"
+            android:textCursorDrawable="@drawable/eidttext_cursor_color"
+            android:maxLines="1"
+            android:paddingRight="8dp"
+            android:textColor="@color/zw_gray_list_txt"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bind_login_e"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/bind_lg_input"
+        android:background="@drawable/login_input_bg_shape">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/zw_gray_login_txt"
+            android:textSize="@dimen/login_txt_size"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/login_page_margin"
+            android:layout_centerVertical="true"
+            android:gravity="left|center_vertical"
+            android:paddingRight="8dp"
+            android:drawableRight="@drawable/to_next"
+            android:text="@string/login_e_select"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/bind_login_select_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/login_page_margin"
+        android:layout_marginRight="@dimen/login_page_margin"
+        android:layout_below="@id/bind_login_e"
+        android:textColor="@color/zw_gray_login_txt"
+        android:textSize="@dimen/login_page_hint_size"
+        android:gravity="center"
+        android:text="@string/login_hint_txt"/>
+
+    <TextView
+        android:id="@+id/bind_lg_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bind_login_e"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/zw_gray_login_txt"
+        android:layout_marginLeft="16dp"
+        android:textSize="12sp"
+        android:text="关联后您的QQ账户和智网账户都可以登录"
+        />
+
+    <TextView
+        android:id="@+id/bind_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/login_page_margin"
+        android:layout_marginRight="@dimen/login_page_margin"
+        android:layout_below="@id/bind_lg_hint"
+        android:background="@drawable/login_btn_bg_shape"
+        android:textColor="@color/zw_white"
+        android:textSize="@dimen/login_btn_txt_size"
+        android:gravity="center"
+        android:text="@string/login_btn"/>
+
+    <TextView
+        android:id="@+id/bind_login_forget_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/bind_login_btn"
+        android:layout_marginRight="@dimen/login_page_margin"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13sp"
+        android:layout_marginTop="20dp"
+        android:text="@string/login_forget"/>
+
+
+
+</RelativeLayout>
+
+
+

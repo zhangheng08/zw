@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_action_layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/main_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fake_action_h"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="10">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_top_bar_bg_shape_white"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_weight="7.9">
+
+            <LinearLayout
+                android:id="@+id/search_btn_con"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/search_action_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13sp"
+                    android:text="课程"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:gravity="center"
+                    android:textColor="@color/zw_gray_main_cell_txt"/>
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/to_exp_gray"/>
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/zw_gray_main_cell_sub_txt"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/to_search_gray"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/search_page_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:cursorVisible="true"
+                    android:hint="在智网中搜索课程，讲师"
+                    android:textCursorDrawable="@drawable/eidttext_cursor_color"
+                    android:textSize="12sp"
+                    android:textColor="@color/zw_gray_main_cell_txt"
+                    android:textColorHint="@color/zw_gray_main_cell_sub_txt"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:imeOptions="actionSearch"/>
+
+                <ImageView
+                    android:id="@+id/search_clear_input_btn"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/close_gray"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/search_page_go_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7"
+            android:textColor="@color/zw_white"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="@string/search_cancel"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

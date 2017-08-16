@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:questionindex="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/question_option_root"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/question_bg_color"
+    android:gravity="left|center_vertical"
+    android:orientation="horizontal">
+
+    <com.ouchn.lib.widget.QuestionOptionIndex
+        android:id="@+id/question_option_index"
+        android:layout_width="@dimen/question_option_index_size"
+        android:layout_height="@dimen/question_option_index_size"
+        android:gravity="center"
+        android:textSize="@dimen/question_option_text_size"
+        questionindex:option_index="0"
+        questionindex:option_index_bg="@drawable/question_option_bg_shape"
+        questionindex:option_index_selelcted_bg="@drawable/question_option_selected_bg_shape"
+        questionindex:option_index_text_color="@color/main_blue"
+        questionindex:option_index_text_color_selected="@color/main_white" />
+
+    <TextView
+        android:id="@+id/question_option_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="left|center_vertical"
+        android:text="null"
+        android:textColor="@color/question_text_color"
+        android:textSize="@dimen/question_option_text_size" />
+
+</LinearLayout>

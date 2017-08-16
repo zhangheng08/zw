@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/note_frag_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zw_white">
+
+    <LinearLayout
+        android:id="@+id/video_frag_btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/video_frag_save_txt"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="6.5"
+            android:background="@drawable/login_btn_bg_shape"
+            android:textColor="@color/zw_white"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:text="@string/video_note_save"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/video_frag_note_input"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:hint="@string/note_hint"
+        android:textSize="14sp"
+        android:lineSpacingMultiplier="1.5"
+        android:gravity="top|left"
+        android:background="@drawable/note_input_bg_shape"
+        android:layout_above="@id/video_frag_btn_save"/>
+
+</RelativeLayout>

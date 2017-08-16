@@ -1,0 +1,241 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/exam_e_list_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="top|center_horizontal"
+        android:layout_margin="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:gravity="left|center_vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:gravity="left|center_vertical">
+
+                <TextView
+                    android:id="@+id/exam_res_q_num"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@color/zw_blue"
+                    android:text="第 1 题"
+                    android:background="@drawable/res_num_bg_shape"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:orientation="horizontal"
+                android:gravity="left|center_vertical">
+
+                <TextView
+                    android:id="@+id/exam_res_q_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="marquee"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/zw_gray_main_cell_txt"
+                    android:text="标题"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal"
+            android:gravity="left|center_vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:gravity="left|center_vertical">
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:orientation="horizontal"
+                android:gravity="left|center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    android:textColor="@color/zw_gray_main_cell_txt"
+                    android:text="状态："/>
+
+                <TextView
+                    android:id="@+id/exam_res_finish_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="已完成"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@color/zw_gray_main_cell_txt"
+                    android:text="得分："/>
+
+                <TextView
+                    android:id="@+id/exam_res_q_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="10"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="0dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="left|top"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:gravity="left|center_vertical">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@color/zw_gray_main_cell_txt"
+                    android:text="我的答案"/>
+
+                <ImageView
+                    android:id="@+id/exam_res_my_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/res_y"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:orientation="horizontal"
+                android:gravity="left|center_vertical">
+
+                <TextView
+                    android:id="@+id/exam_res_my_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/zw_gray_main_cell_txt"
+                    android:textSize="14sp"
+                    android:text=""/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="0dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="left|top"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:gravity="left|center_vertical">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@color/zw_gray_main_cell_txt"
+                    android:text="正确答案"/>
+
+                <ImageView
+                    android:id="@+id/exam_res_right_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/res_y"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:orientation="horizontal"
+                android:gravity="left|center_vertical">
+
+                <TextView
+                    android:id="@+id/exam_res_right_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/zw_gray_main_cell_txt"
+                    android:textSize="14sp"
+                    android:text=""/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@color/zw_gray_course_detail_page_sep" />
+
+</RelativeLayout>

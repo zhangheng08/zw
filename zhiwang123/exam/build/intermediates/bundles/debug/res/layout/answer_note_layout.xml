@@ -1,0 +1,88 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:id="@+id/note_custom_actionbar_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/note_title_answer_content"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/main_blue"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <ImageButton
+                android:id="@+id/note_go_back"
+                android:layout_width="@dimen/question_page_title_item_wh"
+                android:layout_height="@dimen/question_page_title_item_wh"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/close_btn" />
+
+            <ImageButton
+                android:id="@+id/note_clear_note"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/clear_note"
+                android:visibility="visible" />
+            
+            <ImageButton
+                android:id="@+id/note_recover_note"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_toLeftOf="@id/note_clear_note"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/draw_note"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/main_deep_blue"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+		<EditText 
+		    android:id="@+id/note_answer_note_edtv"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		   	android:padding="10dp"
+		   	android:textSize="18sp"
+		   	android:textColor="@color/main_black"
+		   	android:lineSpacingExtra="5dp"
+		   	android:visibility="gone"
+		   	android:background="@null"
+		    android:gravity="left|top"/>
+		    
+		<com.ouchn.lib.widget.DepotDrawLayer
+		    android:id="@+id/question_note_drawlayer"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/main_deep_gray" />
+    </LinearLayout>
+
+</merge>

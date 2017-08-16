@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wx_login_app_callback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zw_gray_main_bg"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/login_third_user_ava"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/tmp_avatar"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/login_third_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="用户名"
+                android:textSize="14sp"
+                android:textColor="@color/zw_gray_main_cell_txt"
+                android:gravity="center"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/wx_to_login_al"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ss100"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="智网APP"
+                android:textSize="14sp"
+                android:textColor="@color/zw_gray_main_cell_txt"
+                android:gravity="center"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/login_third_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/login_btn_bg_shape"
+        android:textColor="@color/zw_white"
+        android:textSize="@dimen/login_btn_txt_size"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:text="@string/login_third_confirm"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        android:id="@+id/fetch_third_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@drawable/progress_custom_shape"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        android:layout_above="@id/login_third_btn"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

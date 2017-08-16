@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\error.png",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\error.png"
+    },
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\go_to.png",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\go_to.png"
+    },
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\bg_rep.png",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\bg_rep.png"
+    },
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\left_list.png",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\left_list.png"
+    },
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\to_answer.png",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\to_answer.png"
+    }
+]

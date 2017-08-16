@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PushSDK/PushSDK.iml" filepath="$PROJECT_DIR$/PushSDK/PushSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exam/exam.iml" filepath="$PROJECT_DIR$/exam/exam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flipperview/flipperview.iml" filepath="$PROJECT_DIR$/flipperview/flipperview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/transformations_glide/transformations_glide.iml" filepath="$PROJECT_DIR$/transformations_glide/transformations_glide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zhiwang123.iml" filepath="$PROJECT_DIR$/zhiwang123.iml" />
+    </modules>
+  </component>
+</project>

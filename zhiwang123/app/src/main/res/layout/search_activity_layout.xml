@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    tools:context=".phone.activity.SearchActivity">
+
+    <RelativeLayout
+        android:id="@+id/search_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/zw_white">
+
+        <RelativeLayout
+            android:id="@+id/search_hot_con"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/zw_white"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/zw_gray_main_cell_txt"
+                android:textSize="@dimen/main_cell_txt_size"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/search_hot"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/zw_gray_main_bottom_bar_sep"/>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/search_hot_scroll"
+            android:layout_below="@id/search_hot_con"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <com.zhiwang123.mobile.phone.widget.LHSearchHistoryLayout
+                android:id="@+id/search_info_hot_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="top|center_horizontal"/>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/search_history_con"
+            android:layout_below="@id/search_hot_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/zw_gray_main_cell_txt"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:textSize="@dimen/main_cell_txt_size"
+                android:text="@string/search_history"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/zw_gray_main_bottom_bar_sep"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/search_btm_con"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:weightSum="10"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:background="@drawable/cell_bg_shape">
+
+            <LinearLayout
+                android:id="@+id/search_clear_history_btn"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="7"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/clear_history"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/zw_gray_main_cell_txt"
+                    android:textSize="14sp"
+                    android:text="@string/search_clear"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/search_history_con"
+            android:layout_above="@id/search_btm_con">
+
+            <com.zhiwang123.mobile.phone.widget.LHSearchHistoryLayout
+                android:id="@+id/search_info_history_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="top|center_horizontal"/>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/search_categray_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/zw_gray_main_bg"
+        android:columnWidth="100dp"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        android:cacheColorHint="#00000000"
+        android:scrollbars="none"
+        android:layout_alignParentTop="true"
+        android:numColumns="3"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/search_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true" >
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

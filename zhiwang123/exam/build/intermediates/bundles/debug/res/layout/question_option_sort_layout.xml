@@ -1,0 +1,33 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:questionindex="http://schemas.android.com/apk/res-auto" >
+
+    <TextView
+        android:id="@+id/sort_left_content"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/question_option_bg_shape"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/main_blue"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/match_center_sepr"
+        android:layout_width="20dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text=" "
+        android:textColor="@color/main_black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/sort_right_content"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:background="@drawable/quesom_border_shape"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/question_text_color"
+        android:textSize="15sp" />
+
+</merge>

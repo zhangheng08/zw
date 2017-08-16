@@ -1,0 +1,252 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/answer_custom_actionbar_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/title_answer_content"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/main_blue">
+
+                <ImageButton
+                    android:id="@+id/answer_go_back"
+                    android:layout_width="@dimen/question_page_title_item_wh"
+                    android:layout_height="@dimen/question_page_title_item_wh"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/go_back" />
+
+                <ImageButton
+                    android:id="@+id/answer_word_size"
+                    android:layout_width="@dimen/question_page_title_item_wh"
+                    android:layout_height="@dimen/question_page_title_item_wh"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/word_size" />
+                
+                <RelativeLayout 
+                    android:id="@+id/answer_word_size_pop_anchor"
+                    android:layout_width="100dp"
+                    android:layout_height="7dp" 
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:visibility="invisible"
+                    android:background="@android:color/transparent">
+                    
+                    <View 
+                    	android:layout_width="match_parent"
+                    	android:layout_height="1px"
+                    	android:layout_alignParentBottom="true"
+                    	android:background="@color/main_deep_blue"/>
+                    
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
+                        android:src="@drawable/cgl2"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/answer_word_size"
+                    android:layout_toRightOf="@id/answer_go_back"
+                    android:baselineAligned="false"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageButton
+                            android:id="@+id/answer_to_answer_note_btn"
+                            android:layout_width="@dimen/question_page_title_item_wh"
+                            android:layout_height="@dimen/question_page_title_item_wh"
+                            android:background="@null"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/note_pager" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:orientation="horizontal" >
+
+                        <ImageButton
+                            android:id="@+id/answer_to_answer_card_btn"
+                            android:layout_width="@dimen/question_page_title_item_wh"
+                            android:layout_height="@dimen/question_page_title_item_wh"
+                            android:background="@null"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/answer_pager" />
+                    </LinearLayout>
+
+                    <com.ouchn.lib.widget.TimerView
+                        android:id="@+id/question_timer_view"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/main_deep_blue"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/answer_depot_name_container"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/main_white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <TextView
+                    android:id="@+id/answer_depot_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="题库"
+                    android:textColor="@color/main_black"
+                    android:textSize="@dimen/question_option_text_size" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal|bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/answer_current_page"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textColor="@color/question_text_color2"
+                        android:textSize="@dimen/question_option_current_page_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/"
+                        android:textColor="@color/main_black"
+                        android:textSize="@dimen/question_option_text_size" />
+
+                    <TextView
+                        android:id="@+id/answer_total_page"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textColor="@color/main_black"
+                        android:textSize="@dimen/question_option_text_size" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/main_deep_gray" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/repeat_bg2" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/answer_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ProgressBar
+                android:id="@+id/answer_progress"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+	<LinearLayout
+	    android:id="@+id/answer_card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical" 
+        android:visibility="gone"
+        android:background="@color/main_white">
+	    <include layout="@layout/answer_card_layout"/>
+	</LinearLayout>
+	<LinearLayout
+	    android:id="@+id/answer_note_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical" 
+        android:visibility="gone"
+        android:background="#7fc1c1c1">
+	    <include layout="@layout/answer_note_layout"/>
+	</LinearLayout>
+	<LinearLayout 
+	    android:id="@+id/answer_save_answer_dialog"
+	    android:layout_width="180dp"
+	    android:layout_height="80dp"
+	    android:background="#7f000000"
+	    android:orientation="horizontal"
+	    android:gravity="center"
+	    android:layout_centerInParent="true"
+	    android:visibility="gone">
+	    <ProgressBar
+        	android:id="@+id/save_answer_progress"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:textColor="#fff"
+	        android:textSize="15sp"
+	        android:text="@string/save_answers"/>
+	</LinearLayout>
+
+</RelativeLayout>

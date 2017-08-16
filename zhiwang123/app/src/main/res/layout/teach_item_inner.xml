@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tachp_page_con"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="40dp"
+    android:background="@drawable/organ_dialog_bg_shape">
+
+    <RelativeLayout
+        android:id="@+id/tachp_topic_bar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <RelativeLayout
+            android:id="@+id/tachp_topic_bar_left"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="5dp">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@color/zw_gray_course_detail_page_sep" />
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/chapter_tag" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tachp_topic_bar_left">
+
+            <TextView
+                android:id="@+id/tachp_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="教学计划"
+                android:textColor="@color/colorPrimary_red"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/tachp_date_con"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tachp_name"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tachp_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="日期"
+                    android:textColor="@color/zw_gray_main_cell_sub_txt"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tachp_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/tachp_study_p"
+                    android:textColor="@color/zw_gray_main_cell_sub_txt"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/tachp_person"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/tp_p" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tachp_target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tachp_date_con"
+                android:layout_marginTop="10dp"
+                android:text="学习目标"
+                android:textColor="@color/zw_gray_main_cell_sub_txt"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/zw_gray_course_detail_page_sep" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tachp_topic_bar">
+
+        <ListView
+            android:id="@+id/tachp_sub_clistv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:choiceMode="multipleChoice"
+            android:dividerHeight="@null"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

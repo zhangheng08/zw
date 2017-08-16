@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\translate_in.xml",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\bundles\\debug\\res\\anim\\translate_in.xml"
+    },
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\linear_interpolator.xml",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\bundles\\debug\\res\\anim\\linear_interpolator.xml"
+    },
+    {
+        "merged": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\translate_out.xml",
+        "source": "E:\\android_stdio_projects\\zhiwang123\\exam\\build\\intermediates\\bundles\\debug\\res\\anim\\translate_out.xml"
+    }
+]

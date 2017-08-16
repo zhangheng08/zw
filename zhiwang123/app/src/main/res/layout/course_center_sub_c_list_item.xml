@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@null"
+    tools:context="com.zhiwang123.mobile.phone.activity.BaseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:gravity="left|center_vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:gravity="center">
+
+                <View
+                    android:id="@+id/sep_top"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/zw_gray_course_detail_page_sep"
+                    android:layout_centerHorizontal="true"/>
+
+                <View
+                    android:id="@+id/sep_btm"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/zw_gray_course_detail_page_sep"
+                    android:layout_centerHorizontal="true"/>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:scaleType="fitXY"
+                android:layout_centerInParent="true"
+                android:src="@drawable/chapter_tag"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/chapter_status"
+                android:layout_width="45dp"
+                android:layout_height="20dp"
+                android:textSize="12sp"
+                android:textColor="@color/zw_red_txt"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/chapter_status_2"
+                android:background="@drawable/exam_e_list_shape_2"/>
+
+            <RelativeLayout
+                android:id="@+id/chapter_item_download_state_con"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <ProgressBar
+                    android:id="@+id/chapter_item_buffer"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="false"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:indeterminateDrawable="@drawable/progress_custom_shape_2"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/chapter_item_local"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:scaleType="fitEnd"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    android:src="@drawable/item_downloaded_blue"/>
+
+                <ImageView
+                    android:id="@+id/chapter_item_cloud"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:scaleType="fitEnd"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/item_download"/>
+
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/chapter_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:lineSpacingMultiplier="1.5"
+                android:layout_toRightOf="@id/chapter_status"
+                android:layout_toLeftOf="@id/chapter_item_download_state_con"
+                android:layout_centerVertical="true"
+                android:textColor="@color/zw_gray_course_detail_page_sub"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="章节"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

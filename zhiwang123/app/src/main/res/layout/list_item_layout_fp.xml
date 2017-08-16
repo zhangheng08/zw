@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/zw_white">
+
+    <RelativeLayout
+        android:id="@+id/main_cell_3_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <View
+            android:id="@+id/cell_3_title_bar_color"
+            android:layout_width="5dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/cell3_title_txtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/zw_gray_list_txt"
+            android:layout_toRightOf="@id/cell_3_title_bar_color"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:layout_marginLeft="8dp"
+            android:text="栏目标题"/>
+
+        <TextView
+            android:id="@+id/cell3_tomore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:textColor="@color/zw_gray_list_txt"
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"
+            android:text=""/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/cell3_line1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:weightSum="2"
+        android:baselineAligned="false"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/main_cell_3_title_bar"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="5dp">
+
+            <include
+                android:id="@+id/cell3_sub_cell_top_left"
+                layout="@layout/list_item_layout_sub"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="5dp">
+
+            <include
+                android:id="@+id/cell3_sub_cell_top_right"
+                layout="@layout/list_item_layout_sub"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+<!--    <LinearLayout
+        android:id="@+id/cell3_line2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:weightSum="2"
+        android:baselineAligned="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/cell3_line1"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="5dp">
+
+            <include
+                android:id="@+id/cell3_sub_cell_center_left"
+                layout="@layout/main_fragment_page_sub_cell_1"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="5dp">
+
+            <include
+                android:id="@+id/cell3_sub_cell_center_right"
+                layout="@layout/main_fragment_page_sub_cell_1"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/cell3_line2"
+        android:background="@color/gray_bg"/> -->
+
+</RelativeLayout>

@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@null"
+    tools:context="com.zhiwang123.mobile.phone.activity.BaseActivity"
+    tools:showIn="@null"
+    android:fitsSystemWindows="false"
+    android:background="@color/zw_gray_course_detail_page_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/zw_white">
+
+            <ImageView
+                android:id="@+id/c_intr_top_img"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:scaleType="fitXY"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/default_bg"
+                android:background="@drawable/topic_border_shape"/>
+
+            <LinearLayout
+                android:id="@+id/c_intr_course_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
+                android:gravity="top|left"
+                android:layout_below="@id/c_intr_top_img">
+
+                <TextView
+                    android:id="@+id/c_intr_course_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/course_intr_txt_size"
+                    android:lineSpacingMultiplier="1.5"
+                    android:textColor="@color/zw_gray_course_detail_page_txt"
+                    android:text="课程标题"/>
+
+
+                <TextView
+                    android:id="@+id/c_intr_course_rmb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:textSize="16sp"
+                    android:textColor="@color/zw_orange_price"
+                    android:textStyle="bold"
+                    android:text="￥ 0"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                    <ImageView
+                        android:id="@+id/c_intr_small_lock"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/lock_ch_x2"/>
+
+                    <TextView
+                        android:id="@+id/c_intr_course_hours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/course_intr_txt_sub"
+                        android:layout_toRightOf="@id/c_intr_small_lock"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/zw_gray_course_detail_page_sub"
+                        android:text=""/>
+
+                    <TextView
+                        android:id="@+id/c_intr_iftest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/zw_red_txt"
+                        android:textSize="@dimen/course_intr_txt_test"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/c_intr_course_hours"
+                        android:layout_marginLeft="15dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:background="@drawable/test_shape"
+                        android:text=""
+                        android:visibility="invisible"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/c_intr_teacher_list_container"
+                android:layout_below="@id/c_intr_course_info"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@color/zw_white">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/c_intr_teacher_list"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/zw_gray_course_detail_page_sep"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/zw_gray_course_detail_page_sep"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/c_intr_course_desc_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_below="@id/c_intr_teacher_list_container"
+                android:background="@color/zw_white">
+
+                <TextView
+                    android:id="@+id/c_intr_course_desc_exp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/zw_gray_course_detail_page_sub"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:lineSpacingMultiplier="1.5"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/c_intr_course_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textColor="@color/zw_gray_course_detail_page_sub"
+                    android:textSize="14sp"
+                    android:maxLines="3"
+                    android:lineSpacingMultiplier="1.5"
+                    android:ellipsize="end"
+                    android:text=""/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/c_intr_desc_exp_btn"
+                android:layout_width="match_parent"
+                android:layout_below="@id/c_intr_course_desc_container"
+                android:layout_height="60dp">
+    
+                <TextView
+                    android:id="@+id/c_intr_desc_state"
+                    android:layout_width="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="27dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:background="@drawable/exp_bg_shape"
+                    android:text="展开"/>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/c_intr_desc_sep"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@drawable/c_intr_border_shape"
+                android:layout_below="@id/c_intr_desc_exp_btn"/>
+
+            <LinearLayout
+                android:id="@+id/c_intr_children_list"
+                android:layout_below="@id/c_intr_desc_sep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/c_intr_chapter"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/course_intr_txt_size"
+                    android:textColor="@color/zw_gray_course_detail_page_txt"
+                    android:text="@string/c_intr_chapter"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/zw_gray_course_detail_page_sep"/>
+
+                <ListView
+                    android:id="@+id/c_intr_chapters"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@null"
+                    android:scrollbars="none"
+                    android:dividerHeight="@null"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/c_intr_tran_area"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/tran_black_bg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/topic_border_shape">
+
+        <LinearLayout
+            android:id="@+id/c_intr_ask_why"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/c_ask"/>
+
+            <TextView
+                android:id="@+id/c_intr_ask_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/zw_gray_course_detail_page_sub"
+                android:text="@string/c_intr_ask_more"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/c_intr_my_cart"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/c_cart"/>
+
+                <TextView
+                    android:id="@+id/c_intr_cart_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/zw_gray_course_detail_page_sub"
+                    android:text="@string/c_intr_cart"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/c_intr_cart_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/zw_white"
+                android:layout_marginRight="5dp"
+                android:textSize="10sp"
+                android:text="0"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/cart_num_bg_shape"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/c_intr_addcart"
+            android:layout_width="90dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/cell_add_to"
+            android:gravity="center"
+            android:textColor="@color/zw_white"
+            android:background="@drawable/c_intr_bottom_btn_bg"
+            android:textSize="14sp"/>
+
+
+        <TextView
+            android:id="@+id/c_intr_buynow"
+            android:layout_width="90dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/c_intr_buy_soon"
+            android:gravity="center"
+            android:textColor="@color/zw_white"
+            android:background="@drawable/c_intr_bottom_btn_bg2"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/share_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#7f000000"
+        android:orientation="vertical"
+        android:gravity="bottom|center_horizontal"
+        android:weightSum="10"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/share_blank"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7.5"
+            android:orientation="vertical">
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:background="@color/zw_white"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/share_action_wxcs"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/share_wxcs"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/zw_gray_main_cell_txt"
+                    android:text="微信"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/share_action_wxtl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/share_wxtl"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/zw_gray_main_cell_txt"
+                    android:text="朋友圈"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/share_action_qq"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/share_qq"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/zw_gray_main_cell_txt"
+                    android:text="QQ"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/share_action_sina"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/share_sina"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/zw_gray_main_cell_txt"
+                    android:text="微博"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/course_intro_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="vertical"
+        android:gravity="top|center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <View
+            android:id="@+id/c_intr_fack_statue"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/zw_trans"/>
+
+        <RelativeLayout
+            android:id="@+id/c_intr_fack_action"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <LinearLayout
+                android:id="@+id/c_intr_go_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/back_img_h"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/c_intr_share"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/share"/>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/c_intr_favorite"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/c_intr_share"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/c_intr_fav_img"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/favorite"/>
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/c_intr_prog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#7f000000"
+        android:clickable="false"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

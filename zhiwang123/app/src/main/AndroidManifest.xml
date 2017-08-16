@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhiwang123.mobile">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <application
+        android:name=".ZWApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <!-- umeng config start-->
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57ff1b32e0f55ace7d0024cb">
+        </meta-data>
+
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="3e14401a98fcb2a3fa061b0104bcc7a1">
+        </meta-data>
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="zhiwang123" >
+        </meta-data>
+
+        <!-- umeng config end-->
+
+        <meta-data
+            android:name="base_url"
+            android:value="http://server.zhiwang123.com/"/>
+
+        <activity android:name=".phone.activity.MainActivity"
+            android:theme="@style/MyAppBaseTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-
+        </activity>
+
+        <activity android:name=".phone.activity.CourseIntroduceActivity"
+            android:theme="@style/MyAppBaseTheme">
+        </activity>
+
+        <activity android:name=".phone.activity.TeacherIntroActivity"
+            android:theme="@style/MyAppBaseTheme">
+        </activity>
+
+        <activity android:name=".phone.activity.SearchActivity"
+            android:theme="@style/MyAppBaseTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+
+        <activity android:name=".phone.activity.TopicWebPageActivity"
+            android:theme="@style/MyAppBaseTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+
+        </activity>
+
+        <activity android:name=".phone.activity.CartActivity"
+            android:theme="@style/MyAppBaseTheme_normal">
+        </activity>
+
+        <activity android:name=".phone.activity.OrderPayActivity"
+            android:theme="@style/MyAppBaseTheme_normal">
+        </activity>
+
+        <activity android:name=".phone.activity.ExamPaperActivity"
+            android:theme="@style/MyAppBaseTheme_normal">
+        </activity>
+
+        <activity android:name=".phone.activity.EditUserInfoActivity"
+            android:theme="@style/MyAppBaseTheme_normal">
+        </activity>
+
+        <activity android:name=".phone.activity.ExamEListActivity"
+            android:theme="@style/MyAppBaseTheme_normal">
+        </activity>
+
+        <activity android:name=".phone.activity.OrderActivity"
+            android:theme="@style/MyAppBaseTheme_normal">
+        </activity>
+
+        <activity android:name=".phone.activity.LoginActivity"
+            android:theme="@style/MyAppBaseTheme_normal"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity android:name=".phone.activity.BindRegisterActivity"
+            android:theme="@style/MyAppBaseTheme_normal"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity android:name=".phone.activity.BindLoginActivity"
+            android:theme="@style/MyAppBaseTheme_normal"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+
+        <activity android:name=".phone.activity.CourseListActivity"
+            android:theme="@style/MyAppBaseTheme_normal"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity android:name=".phone.activity.TeachPlanActivity"
+            android:theme="@style/MyAppBaseTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity android:name=".phone.activity.LocalVideoListActivity"
+            android:theme="@style/MyAppBaseTheme_normal"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity android:name=".phone.activity.OffLineListActivity"
+            android:theme="@style/MyAppBaseTheme_normal"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity android:name=".phone.activity.OrganDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity android:name=".phone.activity.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity android:name=".phone.activity.VideoHintDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+
+        <activity android:name=".phone.activity.CmsListActivity"
+            android:theme="@style/MyAppBaseTheme_normal"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity
+            android:name=".phone.activity.VideoPlayActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation"
+            android:label="@string/play"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity android:name=".phone.activity.AboutActivity"
+            android:theme="@style/MyAppBaseTheme_normal"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <service android:name=".phone.service.ZWDownLoaderService" />
+
+        <!--We-chart config start-->
+        <meta-data
+            android:name="WEIXIN_APPID"
+            android:value="wx5dbdd6555a391027"/>
+
+        <meta-data
+            android:name="WEIXIN_APPSECERT"
+            android:value="xxxxxxxx"/>
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/MyAppBaseTheme_normal"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+
+        <!--We-chart end-->
+
+        <!--QQ Config start-->
+        <!--QQ debug app id : 101361700-->
+        <!--QQ production app id : 101358241-->
+        <meta-data
+            android:name="QQ_APPID"
+            android:value="101361700"/>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:noHistory="true"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent101361700" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden">
+        </activity>
+        <!--QQ Config end-->
+
+        <!--ali pay-->
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+
+        <!--ali pay end-->
+
+        <activity
+            android:name=".phone.activity.BaseActivity"
+            android:label="@string/title_activity_base"/>
+
+        <service android:name=".phone.service.LHUpdateService" />
+
+        <receiver android:name=".phone.receiver.ApkLoadReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

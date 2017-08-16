@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_action_layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:id="@+id/bind_go_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/back_img_h"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bind_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title_size"
+        android:textColor="@color/zw_white"
+        android:text="绑定注册"
+        android:layout_centerInParent="true"/>
+
+<!--    <TextView
+        android:id="@+id/bind_to_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/login_txt_size"
+        android:textColor="@color/zw_white"
+        android:gravity="center"
+        android:layout_marginEnd="15dp"
+        android:text="@string/login_title_register"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        />-->
+
+</RelativeLayout>

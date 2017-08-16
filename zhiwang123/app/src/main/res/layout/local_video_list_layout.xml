@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center_horizontal"
+    android:background="@color/zw_gray_main_bg"
+    android:fitsSystemWindows="true">
+
+    <com.zhiwang123.mobile.phone.widget.listview.XRestrictListView
+        android:id="@+id/local_page_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:scrollbars="none"
+        android:dividerHeight="@null"/>
+
+    <ProgressBar
+        android:id="@+id/local_page_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerInParent="true"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@drawable/progress_custom_shape"/>
+
+
+
+</RelativeLayout>

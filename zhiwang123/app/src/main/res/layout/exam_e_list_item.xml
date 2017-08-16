@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/exam_e_list_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/organ_dialog_bg_shape">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_margin="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:id="@+id/exam_e_item_btn_con"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|bottom">
+
+            <TextView
+                android:id="@+id/exam_e_item_btn"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/tachp_sub_course_to_learn"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/tachp_to_learn_shape"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/exam_e_item_btn_con">
+
+            <LinearLayout
+                android:id="@+id/exam_e_list_t_con"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left|center_vertical">
+
+                <TextView
+                    android:id="@+id/exam_e_item_status"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="未开始"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/tachp_to_learn_shape"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/exam_e_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="教学计划"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/exam_e_item_status"
+                    android:textColor="@color/zw_gray_main_cell_txt"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/exam_e_item_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/zw_gray_main_cell_sub_txt"
+                android:layout_below="@id/exam_e_list_t_con"
+                android:textSize="12sp"
+                android:text="xxxx-xx-xx 至 xxxx-xx-xx"/>
+
+            <LinearLayout
+                android:id="@+id/exam_e_list_h_con"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/exam_e_item_date"
+                android:gravity="left|center_vertical">
+
+                <TextView
+                    android:id="@+id/exam_e_item_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/exam_e_list_cm"
+                    android:textColor="@color/zw_gray_main_cell_sub_txt"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/exam_e_item_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exam_e_list_ti"
+                    android:layout_marginLeft="65dp"
+                    android:maxLines="1"
+                    android:textColor="@color/zw_gray_main_cell_sub_txt"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/zw_gray_course_detail_page_sep" />
+
+</RelativeLayout>

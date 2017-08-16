@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topic_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@color/zw_white"
+    android:orientation="horizontal"
+    android:gravity="left|center_vertical">
+
+    <View
+        android:id="@+id/topic_left_mar"
+        android:layout_width="@dimen/activity_horizontal_margin"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:minWidth="90dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/topic_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/tmp_sit"/>
+
+        <TextView
+            android:id="@+id/topic_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/main_cell_text_style"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="topics"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/topic_right_mar"
+        android:layout_width="@dimen/activity_horizontal_margin"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

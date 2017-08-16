@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="question_option_index">
+        <attr name="option_index_string" format="reference|string" />
+        <attr name="option_index_bg" format="reference" />
+        <attr name="option_index_selelcted_bg" format="reference" />
+        <attr name="option_index_text_color" format="reference|color" />
+        <attr name="option_index_text_color_selected" format="reference|color" />
+        <attr name="option_index_text_size" format="dimension" />
+        <attr name="option_index" format="integer" />
+    </declare-styleable>
+
+</resources>

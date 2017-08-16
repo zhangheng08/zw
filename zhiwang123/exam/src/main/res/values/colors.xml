@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    
+    <color name="main_blue">#00a7eb</color>
+    <color name="main_less_blue">#71d5fe</color>
+    <color name="main_white">#fff</color>
+    <color name="main_white_ht">#7fffffff</color>
+    <color name="main_yellow">#faffbd</color>
+    <color name="main_deep_blue">#175188</color>
+    <color name="main_red">#cb5a5e</color>
+    <color name="main_gray">#c1c1c1</color>
+    <color name="main_less_gray">#ebebeb</color>
+    <color name="main_deep_gray">#acacac</color>
+    <color name="milk_white">#fffce6</color>
+    <color name="question_text_color">#5a626b</color>
+    <color name="question_text_color2">#8282ff</color>
+    <color name="question_bg_color">#f5f5f5</color>
+    <color name="main_black">#ff000000</color>
+    <color name="main_less_pink">#fff8c8d8</color>
+    <color name="main_green">#31b6a1</color>
+    <color name="main_green_gray">#7dc4c6</color>
+    <color name="main_blue_gray">#8aabca</color>
+
+	
+</resources>

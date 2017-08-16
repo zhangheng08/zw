@@ -1,0 +1,56 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/course_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        cardview:cardCornerRadius="3dp"
+        cardview:cardElevation="8dp"
+        cardview:cardMaxElevation="15dp"
+        cardview:cardUseCompatPadding="false"
+        cardview:cardPreventCornerOverlap="true">
+
+        <LinearLayout
+            android:id="@+id/main_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|top"
+            android:background="@color/zw_white">
+
+            <TextView
+                android:id="@+id/searcher_type_btn_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/zw_gray_main_cell_txt"
+                android:textSize="14sp"
+                android:text="@string/search_type_teacher"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/zw_gray_login_sep"/>
+
+            <TextView
+                android:id="@+id/search_type_btn_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/zw_gray_main_cell_txt"
+                android:textSize="14sp"
+                android:text="@string/search_type_title"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+

@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="main_question_type_item_title_margin">8dp</dimen>
+    <dimen name="main_question_type_item_txt_margin_left">7dp</dimen>
+    <dimen name="main_question_type_item_height">80dp</dimen>
+    <dimen name="main_question_type_item_txt_size">16sp</dimen>
+    <dimen name="main_question_type_item_txt_size2">19sp</dimen>
+    <dimen name="main_depot_item_txt_size">16sp</dimen>
+    <dimen name="main_depot_item_height">55dp</dimen>
+    
+    <dimen name="question_option_text_size">18sp</dimen>
+    <dimen name="question_option_current_page_size">25sp</dimen>
+    <dimen name="question_option_index_size">36dp</dimen>
+    <dimen name="question_page_title_item_wh">30dp</dimen>
+    
+
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="100dp" 
+    android:layout_height="wrap_content" 
+    android:orientation="vertical" 
+    android:background="#7ff5f5f5">
+<!--     <View 
+	    android:layout_width="match_parent"
+	    android:layout_height="1px"
+	    android:layout_alignParentBottom="true"
+	    android:background="@color/main_deep_blue"/> -->
+    <TextView 
+        android:id="@+id/pop_l"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="@drawable/pop_item_selector"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/main_deep_blue"
+        android:text="Aa"/>
+   <View 
+       android:layout_width="match_parent"
+       android:layout_height="1px"
+       android:background="@color/main_deep_blue"/>
+    <TextView 
+        android:id="@+id/pop_m"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:background="@drawable/pop_item_selector"
+        android:textColor="@color/main_deep_blue"
+        android:text="Aa"/> 
+   <View 
+       android:layout_width="match_parent"
+       android:layout_height="1px"
+       android:background="@color/main_deep_blue"/>
+    <TextView 
+        android:id="@+id/pop_s"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/pop_item_selector"
+        android:textColor="@color/main_deep_blue"
+        android:text="Aa"/>
+   
+</LinearLayout>

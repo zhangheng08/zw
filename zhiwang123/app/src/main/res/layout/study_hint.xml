@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:gravity="top|center_horizontal"
+    android:background="@color/zw_trans_h">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:layout_margin="30dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/organ_dialog_bg_shape">
+
+        <RelativeLayout
+            android:id="@+id/hint_con"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/top_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/zw_gray_main_cell_txt"
+                android:textSize="16sp"
+                android:text="重要提示"/>
+
+            <TextView
+                android:id="@+id/hint_info"
+                android:layout_below="@id/top_title"
+                android:layout_marginTop="15dp"
+                android:lineSpacingExtra="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/zw_gray_main_cell_txt"
+                android:textSize="14sp"
+                android:text="@string/center_study_hint"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/hint_confirm"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.95"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/login_e"
+                        android:background="@drawable/login_btn_bg_shape"
+                        android:textColor="@color/zw_white"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:text="确定"
+                        android:id="@+id/textView" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hint_cancel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.95"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/login_e"
+                        android:background="@drawable/hint_cancel_shape"
+                        android:textColor="@color/zw_white"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:text="取消"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/hint_active_con"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/zw_gray_main_cell_txt"
+                android:layout_marginLeft="10dp"
+                android:text="正在激活..."/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.9"/>
+
+</LinearLayout>

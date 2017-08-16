@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary_red">#de0000</color>
+    <color name="colorPrimaryDark">#de0000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#168aef</color>
+    <color name="colorPrimary_son">#61b0f3</color>
+    <color name="colorPrimary_hf_tran">#7f168aef</color>
+
+    <color name="zw_green">#49b730</color>
+
+    <color name="zw_yellow">#fefce1</color>
+
+    <color name="zw_white">#FFFFFF</color>
+    <color name="zw_white_ht">#7FFFFFFF</color>
+    <color name="zw_red">#de0000</color>
+    <color name="zw_red_n">#fe3136</color>
+    <color name="zw_red_txt">#d83200</color>
+    <color name="zw_gray_main_bottom_bar_text">#757575</color>
+    <color name="zw_gray_main_bottom_bar_sep">#d9dde8</color>
+    <color name="zw_gray_main_bg">#f5f5f5</color>
+    <color name="zw_gray_main_top_bar">#5f000000</color>
+    <color name="zw_gray_list_txt">#333</color>
+    <color name="zw_gray_login_bg">#f3f2f0</color>
+    <color name="zw_gray_login_txt">#ababab</color>
+    <color name="zw_blue_edit_cursor">#656565</color>
+    <color name="zw_gray_login_sep">#e4e3de</color>
+    <color name="zw_gray_login_other">#a9a9a9</color>
+    <color name="zw_gray_login_other_sep">#d6d5d5</color>
+    <color name="zw_gray_me_page_txt">#757575</color>
+    <color name="zw_gray_main_cell_txt">#494949</color>
+    <color name="zw_gray_main_cell_sub_txt">#ababab</color>
+    <color name="zw_orange_price">#f56725</color>
+    <color name="zw_gray_eee">#eee</color>
+    <color name="zw_gray_tran">#7f000000</color>
+
+    <color name="zw_gray_course_cell_sep">#f5f5f5</color>
+    <color name="zw_gray_course_cell_border">#e5e5e5</color>
+    <color name="zw_trans">#00000000</color>
+    <color name="zw_trans_h">#af000000</color>
+
+    <color name="zw_gray_cart_btm">#f1f1f1</color>
+    <color name="zw_gray_cart_border">#cecece</color>
+
+    <color name="zw_gray_course_detail_page_txt">#4a4a4a</color>
+    <color name="zw_gray_course_detail_page_sub">#747474</color>
+    <color name="zw_gray_course_detail_page_bg">#f7f3f4</color>
+    <color name="zw_gray_course_detail_page_sep">#e5e5e5</color>
+
+    <color name="zw_gray_order_cell_text">#484848</color>
+
+    <color name="zw_gray_history_item_bg">#f3f3f3</color>
+
+    <color name="zw_blue">#11487e</color>
+
+    <color name="navpage">#FFE1E8EB</color>
+
+    <!--cc video-->
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="green">#ff00ff00</color>
+    <color name="red">#ffff0000</color>
+    <color name="higtlight">#ff0078f0</color>
+    <color name="durationtext">#ff7d7d7d</color>
+    <color name="background">#ffc3ddea</color>
+    <color name="yellow">#ffffcc00</color>
+    <color name="title">#ff274462</color>
+    <color name="ad_color">#66000000</color>
+
+
+</resources>

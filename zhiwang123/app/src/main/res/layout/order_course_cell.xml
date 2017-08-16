@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/zw_gray_main_bg">
+
+    <LinearLayout
+        android:id="@+id/order_inner_reuse_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inner_cell_height"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:baselineAligned="false"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_v_margin"
+        android:layout_marginBottom="@dimen/activity_v_margin">
+
+        <ImageView
+            android:id="@+id/order_inner_left_img"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:scaleType="fitXY"
+            android:padding="1px"
+            android:background="@drawable/img_border_shape"
+            android:src="@null"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/main_cell_padding"
+            android:layout_weight="5">
+
+            <TextView
+                android:id="@+id/order_inner_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/main_cell_text_style"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/order_inner_sub_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/order_inner_title"
+                android:layout_alignParentLeft="true"
+                style="@style/main_cell_subtext_style"
+                android:maxLines="1"
+                android:layout_marginTop="3dp"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/order_inner_sub_study_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/order_inner_sub_teacher"
+                android:layout_alignParentLeft="true"
+                style="@style/main_cell_subtext_style"
+                android:maxLines="1"
+                android:layout_marginTop="3dp"
+                android:text=""/>
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="top|center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/order_inner_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/zw_gray_main_cell_txt"
+                android:textSize="14sp"
+                android:gravity="right|center_vertical"
+                android:textStyle="bold"
+                android:text="@string/course_price"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.2px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@color/zw_gray_login_sep"/>
+
+</RelativeLayout>

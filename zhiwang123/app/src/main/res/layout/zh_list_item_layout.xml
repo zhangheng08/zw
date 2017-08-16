@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/behind_layer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#c63434" >
+
+    <TextView
+        android:id="@+id/click_event_trigger"
+        android:layout_width="200px"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="删除"
+        android:textSize="14sp"
+        android:textColor="@color/zw_white" />
+
+    <com.zhiwang123.mobile.phone.widget.listview.XRestrictSideSlipCell
+        android:id="@+id/scroll_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

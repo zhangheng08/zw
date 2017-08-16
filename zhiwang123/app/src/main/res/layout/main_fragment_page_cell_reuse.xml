@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/zw_white">
+
+    <LinearLayout
+        android:id="@+id/cell_reuse_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cell_height"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:baselineAligned="false"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_v_margin"
+        android:layout_marginBottom="@dimen/activity_v_margin">
+
+        <RelativeLayout
+            android:id="@+id/cell_left_img_con"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+
+            <ImageView
+                android:id="@+id/cell_left_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:padding="1px"
+                android:background="@drawable/img_border_shape"
+                android:src="@drawable/tmp_sit"/>
+
+            <FrameLayout
+                android:id="@+id/cell_img_fav_con"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/zw_gray_tran">
+
+                <ImageView
+                    android:id="@+id/cell_img_fav"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/v_favorite"
+                    android:layout_gravity="center"/>
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/v_favorite"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/main_cell_padding"
+            android:layout_weight="6">
+
+            <TextView
+                android:id="@+id/cell_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/main_cell_text_style"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:lineSpacingExtra="4dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text=""/>
+
+            <LinearLayout
+                android:id="@+id/cell_sub_title_con"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cell_title"
+                android:orientation="horizontal"
+                android:gravity="left|center_vertical"
+                android:layout_alignParentLeft="true">
+
+                <TextView
+                    android:id="@+id/cell_sub_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/main_cell_subtext_style"
+                    android:maxLines="1"
+                    android:layout_marginTop="@dimen/main_cell_padding"
+                    android:text=""/>
+
+                <TextView
+                    android:id="@+id/cell_sub_title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/main_cell_subtext_style"
+                    android:layout_marginLeft="20dp"
+                    android:maxLines="1"
+                    android:layout_marginTop="@dimen/main_cell_padding"
+                    android:text=""
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/cell_sub_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cell_sub_title_con"
+                android:layout_alignParentLeft="true"
+                style="@style/main_cell_subtext_style"
+                android:maxLines="1"
+                android:layout_marginTop="3dp"
+                android:visibility="invisible"
+                android:text=""/>
+
+
+            <RelativeLayout
+                android:id="@+id/nc_buy_bar"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_height="23dp">
+
+                <TextView
+                    android:id="@+id/nc_rmb_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/zw_orange_price"
+                    android:layout_alignParentBottom="true"
+                    android:text="00"
+                    android:layout_marginLeft="12dp"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/nc_rmb_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/zw_orange_price"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignBaseline="@id/nc_rmb_value"
+                    android:text="￥"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/nc_rmb_dot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/zw_orange_price"
+                    android:layout_toRightOf="@id/nc_rmb_value"
+                    android:layout_alignBaseline="@id/nc_rmb_value"
+                    android:text=".00"
+                    android:textSize="12sp"/>
+
+                <RelativeLayout
+                    android:id="@+id/nc_cell_add_to"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true">
+                    <!--<TextView
+                        android:id="@+id/nc_cell_add_to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/main_cell_add_txt_size"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="@string/cell_add_to"/>-->
+
+                    <ImageView
+                        android:id="@+id/nc_cell_cart_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitEnd"
+                        android:src="@drawable/cart_list_dis"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nc_buy_free_bar"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_height="23dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/nc_rmb_free"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/zw_orange_price"
+                    android:layout_alignParentLeft="true"
+                    android:text="免费"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.2px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@color/zw_gray_login_sep"/>
+
+</RelativeLayout>

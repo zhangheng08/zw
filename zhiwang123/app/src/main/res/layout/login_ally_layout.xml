@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/qq_login_app_callback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/zw_gray_main_bg"
+        android:paddingTop="20dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+
+
+        <ImageView
+            android:id="@+id/third_avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/default_avatar"
+            android:layout_centerHorizontal="true"
+            android:padding="1dp"
+            android:background="@color/zw_white"/>
+
+
+        <LinearLayout
+            android:id="@+id/third_line_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/third_avatar"
+            android:gravity="center_vertical|left">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/zw_gray_main_cell_sub_txt"
+                android:textSize="15sp"
+                android:text="亲爱的QQ用户：" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/zw_gray_main_cell_txt"
+                android:textSize="16sp"
+                android:text="张先生" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/third_line_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/third_line_1"
+            android:gravity="center_vertical|left">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/zw_gray_main_cell_txt"
+                android:textSize="15sp"
+                android:text="为了给您更好的用户体验，请管理一个智网账号" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/third_line_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="60dp"
+            android:layout_below="@id/third_line_1"
+            android:gravity="center_vertical|left">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/zw_gray_main_cell_sub_txt"
+                android:textSize="15sp"
+                android:text="还没有智网账号？" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/register_bind_btn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/third_line_3"
+            android:background="@drawable/login_btn_bg_shape"
+            android:textColor="@color/zw_white"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="快速注册"/>
+
+        <LinearLayout
+            android:id="@+id/third_line_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/register_bind_btn"
+            android:gravity="center_vertical|left">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/zw_gray_main_cell_sub_txt"
+                android:textSize="15sp"
+                android:text="已有智网账号？" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/login_bind_btn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/third_line_4"
+            android:background="@drawable/bind_login_bg_shape"
+            android:textColor="@color/zw_gray_main_cell_txt"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="立即关联"/>
+
+        <ProgressBar
+            android:id="@+id/third_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@drawable/progress_custom_shape"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="120dp"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
