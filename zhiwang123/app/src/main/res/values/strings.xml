@@ -74,6 +74,10 @@
     <string name="cell_face_course_sub">优秀讲师现场教学</string>
     <string name="cell_news">新闻动态</string>
     <string name="cell_news_sub">最新新闻动态</string>
+    <string name="cell_e_organ_local">自有e学院</string>
+    <string name="cell_e_organ_package">课程包e学院</string>
+    <string name="cell_teacher_class">名师讲堂</string>
+    <string name="cell_teacher_class_sub">汇聚一线实战讲师</string>
 
     <string name="cell_tmp_name">智网课程分类</string>
     <string name="cell_newest_title">最新课程</string>

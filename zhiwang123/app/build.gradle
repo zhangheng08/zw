@@ -5,8 +5,8 @@ android {
         applicationId "com.zhiwang123.mobile"
         minSdkVersion 16
         targetSdkVersion 24
-        versionCode 50
-        versionName "1.0.0.29"
+        versionCode 64
+        versionName "1.0.0.38"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         renderscriptTargetApi 24
         renderscriptSupportModeEnabled true

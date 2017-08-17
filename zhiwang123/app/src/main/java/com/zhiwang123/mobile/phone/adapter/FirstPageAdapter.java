@@ -27,6 +27,9 @@ import com.ouchn.flipper.SliderTypes.BaseSliderView;
 import com.ouchn.flipper.SliderTypes.TextSliderView;
 import com.zhiwang123.mobile.R;
 import com.zhiwang123.mobile.phone.activity.CourseListActivity;
+import com.zhiwang123.mobile.phone.activity.LoginActivity;
+import com.zhiwang123.mobile.phone.activity.MainActivity;
+import com.zhiwang123.mobile.phone.activity.TeachPlanActivity;
 import com.zhiwang123.mobile.phone.activity.TopicWebPageActivity;
 import com.zhiwang123.mobile.phone.bean.Course;
 import com.zhiwang123.mobile.phone.bean.CourseNewest;
@@ -93,17 +96,21 @@ public class FirstPageAdapter extends BaseZwAdapter {
         TextView fcTv = (TextView) mTopicContainer.findViewById(R.id.free_course);
         TextView fcsubTv = (TextView) mTopicContainer.findViewById(R.id.free_course_sub);
 
-        View barginCon = mTopicContainer.findViewById(R.id.bargin_con);
-        TextView bcTv = (TextView) mTopicContainer.findViewById(R.id.bargain_course);
-        TextView bcsubTv = (TextView) mTopicContainer.findViewById(R.id.bargain_course_sub);
+        View ePackageCon = mTopicContainer.findViewById(R.id.e_package_con);
+        TextView ePackageTv = (TextView) mTopicContainer.findViewById(R.id.e_package);
+        TextView ePackageSubTv = (TextView) mTopicContainer.findViewById(R.id.e_package_sub);
+
+        View eLocalCon = mTopicContainer.findViewById(R.id.e_local_con);
+        TextView eLocalTv = (TextView) mTopicContainer.findViewById(R.id.e_local);
+        TextView eLocalSubTv = (TextView) mTopicContainer.findViewById(R.id.e_local_sub);
 
         View teacherCon = mTopicContainer.findViewById(R.id.teacher_con);
-        TextView trTv = (TextView) mTopicContainer.findViewById(R.id.teacher_rank);
-        TextView trsubTv = (TextView) mTopicContainer.findViewById(R.id.teacher_rank_sub);
+        TextView trTv = (TextView) mTopicContainer.findViewById(R.id.teacher_course);
+        TextView trsubTv = (TextView) mTopicContainer.findViewById(R.id.teacher_course_sub);
 
-        View faceCon = mTopicContainer.findViewById(R.id.face_con);
-        TextView facecTv = (TextView) mTopicContainer.findViewById(R.id.face_course);
-        TextView facecsubTv = (TextView) mTopicContainer.findViewById(R.id.face_course_sub);
+//        View faceCon = mTopicContainer.findViewById(R.id.face_con);
+//        TextView facecTv = (TextView) mTopicContainer.findViewById(R.id.face_course);
+//        TextView facecsubTv = (TextView) mTopicContainer.findViewById(R.id.face_course_sub);
 
         View newsCon = mTopicContainer.findViewById(R.id.news_con);
         TextView naTv = (TextView) mTopicContainer.findViewById(R.id.news_action);
@@ -112,9 +119,10 @@ public class FirstPageAdapter extends BaseZwAdapter {
         TextView newsListTitltTv = (TextView) mTopicContainer.findViewById(R.id.cell_course_root);
 
         fcCon.setOnClickListener(mTopicClick);
-        barginCon.setOnClickListener(mTopicClick);
+        ePackageCon.setOnClickListener(mTopicClick);
+        eLocalCon.setOnClickListener(mTopicClick);
         teacherCon.setOnClickListener(mTopicClick);
-        faceCon.setOnClickListener(mTopicClick);
+//        faceCon.setOnClickListener(mTopicClick);
         newsCon.setOnClickListener(mTopicClick);
 
     }
@@ -815,24 +823,22 @@ public class FirstPageAdapter extends BaseZwAdapter {
                     mContext.startActivity(intent2);
 
                     return;
-                case R.id.bargin_con:
-
-                    intent.putExtra(TopicWebPageActivity.KEY_URL, "http://www.zhiwang123.com/ThrCourse/Index");
-                    intent.putExtra(TopicWebPageActivity.KEY_NAME, "超值套餐");
-
-                    break;
+//                case R.id.bargin_con:
+//
+//                    intent.putExtra(TopicWebPageActivity.KEY_URL, "http://www.zhiwang123.com/ThrCourse/Index");
+//                    intent.putExtra(TopicWebPageActivity.KEY_NAME, "超值套餐");
+//                    break;
                 case R.id.teacher_con:
 
                     intent.putExtra(TopicWebPageActivity.KEY_URL, "http://www.zhiwang123.com/ThrExpert/List");
                     intent.putExtra(TopicWebPageActivity.KEY_NAME, "优秀讲师");
 
                     break;
-                case R.id.face_con:
-
-                    intent.putExtra(TopicWebPageActivity.KEY_URL, "http://www.zhiwang123.com/Pages/FaceTeach/");
-                    intent.putExtra(TopicWebPageActivity.KEY_NAME, "面授课程");
-
-                    break;
+//                case R.id.face_con:
+//
+//                    intent.putExtra(TopicWebPageActivity.KEY_URL, "http://www.zhiwang123.com/Pages/FaceTeach/");
+//                    intent.putExtra(TopicWebPageActivity.KEY_NAME, "面授课程");
+//                    break;
                 case R.id.news_con:
 
                     //intent = new Intent(mContext, CmsListActivity.class);
@@ -840,6 +846,35 @@ public class FirstPageAdapter extends BaseZwAdapter {
                     intent.putExtra(TopicWebPageActivity.KEY_NAME, "新闻动态");
 
                     break;
+                case R.id.e_local_con:
+                case R.id.e_package_con:
+
+
+                    Intent centerIntent = null;
+
+                    if((StaticConfigs.mLoginResult == null ? false : true) && (StaticConfigs.mLoginResult.accessToken == null ? false : true)) {
+
+                        if(StaticConfigs.mLoginResult.loginMode == StaticConfigs.LOGIN_MODE_E) {
+
+                            centerIntent = new Intent(mContext, TeachPlanActivity.class);
+
+                        } else {
+
+                            centerIntent = new Intent(mContext, CourseListActivity.class);
+                            centerIntent.putExtra(CourseListActivity.EXTRA_SWITCH_FRAGMENT, CourseListActivity.FRAGMENT_COURSE_CENTER);
+
+                        }
+
+                        mContext.startActivity(centerIntent);
+
+                    } else {
+
+                        centerIntent = new Intent(mContext, LoginActivity.class);
+                        ((MainActivity)mContext).startActivityForResult(centerIntent, StaticConfigs.REQUEST_CODE_LOGIN);
+
+                    }
+
+                    return;
             }
 
             mContext.startActivity(intent);
